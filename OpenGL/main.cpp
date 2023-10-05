@@ -427,22 +427,6 @@ int main()
         std::string acc = std::to_string(acceleration);
         std::string amp = std::to_string(amplitude);
         std::string target_amplitude = std::to_string(targetAmplitude);
-        float calculatedValue = amplitude * 100;
-        if (calculatedValue < 0) {
-            calculatedValue = 0;
-        }
-        std::string cuteness = std::to_string(calculatedValue);
-
-        std::string textToShow = "Level imutnya Nadipa <3 <3 <3: " + cuteness + "% ";
-        glm::vec3 textColor(0.0f, 0.0f, 0.0f); // default to black color
-
-        if (calculatedValue > 100) {
-            textToShow = "Peluk Nadhifaaa <3, semangat yaa ayangkuu kamu pasti bisaa <3 :D";
-        }
-        else {
-            textToShow = "Level imutnya Nadipa <3 <3 <3: " + cuteness + "% ";
-        }
-
         std::string damping_str = std::to_string(damping);
         std::string stiffnes_str = std::to_string(stiffness);
     //    std::string freq_str = std::to_string(freq);
@@ -457,8 +441,7 @@ int main()
         RenderText(shader, "Current force: " + forceStr + "N", 25.0f, 110.0f, 0.4f, glm::vec3(1.0f, 1.0f, 0.0f));
         RenderText(shader, "Current Amplitude: " + amp, 25.0f, 80.0f, 0.4f, glm::vec3(1.0f, 1.0f, 0.0f));
         RenderText(shader, "Current Acceleration: " + acc + "m/s^2", 25.0f, 50.0f, 0.4f, glm::vec3(1.0f, 1.0f, 0.0f));
-        RenderText(shader, "Socket: " + socket_str, 25.0f, 25.0f, 0.4f, glm::vec3(1.0f, 1.0f, 0.0f));
-        RenderText(shader, textToShow, 25.0f, 850.0f, 0.4f, glm::vec3(1.0f, 1.0f, 0.0f));
+  //      RenderText(shader, "Socket: " + socket_str, 25.0f, 25.0f, 0.4f, glm::vec3(1.0f, 1.0f, 0.0f));
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
