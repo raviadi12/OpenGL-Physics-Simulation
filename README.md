@@ -4,6 +4,9 @@ This project is an OpenGL-based simulation for visualizing both N-body gravitati
 
 ## Features
 
+![Simulation Demo](https://raviadi12.github.io/ezgif-1-cda2b3c1f3.gif)
+
+
 ### N-Body Simulation
 
 - Simulates the gravitational interactions between multiple celestial bodies.
